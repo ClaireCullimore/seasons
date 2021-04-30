@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import SemanticUI from "semantic-ui-css/semantic.min.css";
+
+
 
 class App extends React.Component {
  //  constructor(props) {
@@ -45,4 +48,4 @@ class App extends React.Component {
   }
 }
 
-ReactDom.render(<App />, document.querySelector('#root'))
+ReactDom.render(<App S={SemanticUI} />, document.querySelector('#root'))
